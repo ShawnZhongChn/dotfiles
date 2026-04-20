@@ -209,3 +209,8 @@ desc:      PDF rendering library (based on the xpdf-3.0 code base)
 installed: 2026-04-19
 comment:   纸飞机
 desc:      (cask - no brew desc available)
+
+# ── pnpm ──────────────────────────────────
+installed: 2026-04-20
+comment:   Node.js 包管理器
+desc:      Fast, disk space efficient package manager

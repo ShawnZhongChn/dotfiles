@@ -21,6 +21,7 @@ brew "lazydocker"
 brew "lazygit"
 # 主编辑器
 brew "neovim"
+brew "pnpm"
 # PDF预览 辅助 Yazi
 brew "poppler"
 # 极速 Zsh 主题
@@ -69,4 +70,5 @@ cask "obsidian"
 cask "orbstack"
 # 截图/贴图/OCR 效率工具
 cask "pixpin"
+# 纸飞机
 cask "telegram"
