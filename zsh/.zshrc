@@ -14,6 +14,7 @@ export COLORTERM=truecolor
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 # export LANG=en_US.UTF-8
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 # ==========================================
 # 4. 现代 CLI 工具集成 (Rust-based Tools)
 # ==========================================
