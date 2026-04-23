@@ -22,6 +22,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Zoxide: 现代化的 cd 替换工具 (使用 z 代替 cd)
 eval "$(zoxide init zsh)"
 
+# Direnv: 自动加载项目级环境变量
+eval "$(direnv hook zsh)"
+
 # 别名映射 (Aliases)
 # 使用 eza 替代 ls (更漂亮的图标和颜色)
 alias ls='eza --icons'
