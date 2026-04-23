@@ -219,3 +219,8 @@ desc:      Fast, disk space efficient package manager
 installed: 2026-04-23
 comment:   自动加载项目级环境变量
 desc:      Load/unload environment variables based on $PWD
+
+# ── go ──────────────────────────────────
+installed: 2026-04-23
+comment:   Go 编程语言
+desc:      Open source programming language to build simple/reliable/efficient software
