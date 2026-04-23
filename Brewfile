@@ -2,10 +2,9 @@
 tap "romkatv/powerlevel10k"
 # 带语法高亮的 cat 替代品
 brew "bat"
-# 自动加载项目级环境变量
-brew "direnv"
 # 内嵌在 nvim 中的 代码对比工具:逻辑差异深度审查
 brew "difftastic"
+brew "direnv"
 # 带图标的 ls 现代化替代品
 brew "eza"
 # 实现terminal启动的欢迎展示
@@ -15,8 +14,6 @@ brew "fzf"
 # Google Gemini 终端助手
 brew "gemini-cli"
 brew "git-delta"
-# Go 编程语言
-brew "go"
 # JSON预览 辅助 Yazi
 brew "jq"
 # Docker 交互式终端界面
@@ -25,6 +22,7 @@ brew "lazydocker"
 brew "lazygit"
 # 主编辑器
 brew "neovim"
+# Node.js 包管理器
 brew "pnpm"
 # PDF预览 辅助 Yazi
 brew "poppler"

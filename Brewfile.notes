@@ -214,3 +214,8 @@ desc:      (cask - no brew desc available)
 installed: 2026-04-20
 comment:   Node.js 包管理器
 desc:      Fast, disk space efficient package manager
+
+# ── direnv ──────────────────────────────────
+installed: 2026-04-23
+comment:   自动加载项目级环境变量
+desc:      Load/unload environment variables based on $PWD
