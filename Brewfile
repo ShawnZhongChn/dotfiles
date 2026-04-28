@@ -1,5 +1,6 @@
 # Zsh 主题仓库
 tap "romkatv/powerlevel10k"
+tap "sunnyyoung/tap"
 # 带语法高亮的 cat 替代品
 brew "bat"
 # 内嵌在 nvim 中的 代码对比工具:逻辑差异深度审查
@@ -15,6 +16,7 @@ brew "fzf"
 # Google Gemini 终端助手
 brew "gemini-cli"
 brew "git-delta"
+# Go 编程语言
 brew "go"
 # JSON预览 辅助 Yazi
 brew "jq"
@@ -50,6 +52,7 @@ brew "zsh"
 brew "zsh-autosuggestions"
 # 语法高亮插件
 brew "zsh-syntax-highlighting"
+brew "sunnyyoung/tap/wechattweak"
 cask "apifox"
 # 用于在cli中大模型切换使用
 cask "cc-switch"
