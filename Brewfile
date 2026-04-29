@@ -1,3 +1,4 @@
+tap "opencoworkai/tap"
 # Zsh 主题仓库
 tap "romkatv/powerlevel10k"
 tap "sunnyyoung/tap"
@@ -52,6 +53,7 @@ brew "zsh"
 brew "zsh-autosuggestions"
 # 语法高亮插件
 brew "zsh-syntax-highlighting"
+# 微信多开工具
 brew "sunnyyoung/tap/wechattweak"
 cask "apifox"
 # 用于在cli中大模型切换使用
@@ -73,6 +75,7 @@ cask "hammerspoon"
 cask "keka"
 # 知识管理与 Markdown 笔记
 cask "obsidian"
+cask "opencoworkai/tap/open-codesign"
 # 轻量级容器与虚拟机管理
 cask "orbstack"
 # 截图/贴图/OCR 效率工具

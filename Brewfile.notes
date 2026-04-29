@@ -229,3 +229,8 @@ desc:      Open source programming language to build simple/reliable/efficient s
 installed: 2026-04-28
 comment:   微信多开工具
 desc:      A command-line tool for tweaking WeChat.
+
+# ── opencoworkai/tap/open-codesign ──────────────────────────────────
+installed: 2026-04-29
+comment:   claude Design
+desc:      (cask - no brew desc available)
