@@ -234,3 +234,8 @@ desc:      A command-line tool for tweaking WeChat.
 installed: 2026-04-29
 comment:   claude Design
 desc:      (cask - no brew desc available)
+
+# ── mosh ──────────────────────────────────
+installed: 2026-05-12
+comment:   ssh输入预测
+desc:      Remote terminal application
