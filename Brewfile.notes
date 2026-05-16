@@ -239,3 +239,8 @@ desc:      (cask - no brew desc available)
 installed: 2026-05-12
 comment:   ssh输入预测
 desc:      Remote terminal application
+
+# ── cc-connect ──────────────────────────────────
+installed: 2026-05-16
+comment:   (无备注)
+desc:      Bridges local AI coding agents to messaging platforms

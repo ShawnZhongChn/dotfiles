@@ -4,6 +4,7 @@ tap "romkatv/powerlevel10k"
 tap "sunnyyoung/tap"
 # 带语法高亮的 cat 替代品
 brew "bat"
+brew "cc-connect"
 # 内嵌在 nvim 中的 代码对比工具:逻辑差异深度审查
 brew "difftastic"
 # 自动加载项目级环境变量
@@ -25,6 +26,7 @@ brew "jq"
 brew "lazydocker"
 # Git 交互式终端界面
 brew "lazygit"
+# ssh输入预测
 brew "mosh"
 # 主编辑器
 brew "neovim"
@@ -34,6 +36,7 @@ brew "pnpm"
 brew "poppler"
 # 极速 Zsh 主题
 brew "powerlevel10k"
+brew "python@3.13"
 # 高速搜索，neovim grep 依赖
 brew "ripgrep"
 brew "rust"
@@ -56,20 +59,31 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # 微信多开工具
 brew "sunnyyoung/tap/wechattweak"
+cask "apifox"
 # 用于在cli中大模型切换使用
 cask "cc-switch"
 # 大模型聊天工具
 cask "cherry-studio"
 # Anthropic 命令行 AI 助手
 cask "claude-code"
+# 临时使用数据库
+cask "datagrip"
+# 钉钉办公客户端
+cask "dingtalk"
 # 编程图标补丁字体
 cask "font-jetbrains-mono-nerd-font"
 cask "ghostty"
 # 实现豆包的语音输入接入
 cask "hammerspoon"
+# 压缩与解压缩工具
+cask "keka"
 # 知识管理与 Markdown 笔记
 cask "obsidian"
 # claude Design
 cask "opencoworkai/tap/open-codesign"
 # 轻量级容器与虚拟机管理
 cask "orbstack"
+# 截图/贴图/OCR 效率工具
+cask "pixpin"
+# 纸飞机
+cask "telegram"
