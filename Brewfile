@@ -17,6 +17,7 @@ brew "fastfetch"
 brew "fzf"
 # Google Gemini 终端助手
 brew "gemini-cli"
+brew "gh"
 brew "git-delta"
 # Go 编程语言
 brew "go"
@@ -62,8 +63,6 @@ brew "sunnyyoung/tap/wechattweak"
 cask "apifox"
 # 用于在cli中大模型切换使用
 cask "cc-switch"
-# 大模型聊天工具
-cask "cherry-studio"
 # Anthropic 命令行 AI 助手
 cask "claude-code"
 # 临时使用数据库
@@ -79,11 +78,10 @@ cask "hammerspoon"
 cask "keka"
 # 知识管理与 Markdown 笔记
 cask "obsidian"
-# claude Design
-cask "opencoworkai/tap/open-codesign"
 # 轻量级容器与虚拟机管理
 cask "orbstack"
 # 截图/贴图/OCR 效率工具
 cask "pixpin"
 # 纸飞机
 cask "telegram"
+npm "lawliet-code"

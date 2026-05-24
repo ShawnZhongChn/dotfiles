@@ -244,3 +244,8 @@ desc:      Remote terminal application
 installed: 2026-05-16
 comment:   (无备注)
 desc:      Bridges local AI coding agents to messaging platforms
+
+# ── gh ──────────────────────────────────
+installed: 2026-05-24
+comment:   (无备注)
+desc:      GitHub command-line tool
