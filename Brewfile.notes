@@ -249,3 +249,8 @@ desc:      Bridges local AI coding agents to messaging platforms
 installed: 2026-05-24
 comment:   (无备注)
 desc:      GitHub command-line tool
+
+# ── wireguard-tools ──────────────────────────────────
+installed: 2026-05-25
+comment:   wireguard 工具
+desc:      Tools for the WireGuard secure network tunnel

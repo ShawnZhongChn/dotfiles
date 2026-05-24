@@ -48,6 +48,7 @@ brew "tmux"
 brew "tmuxinator"
 # Python 包与项目管理器
 brew "uv"
+brew "wireguard-tools"
 # 基于 Rust 的终端文件管理器
 brew "yazi"
 # 智能 cd 跳转工具
