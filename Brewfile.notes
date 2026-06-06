@@ -79,11 +79,6 @@ installed: unknown
 comment:   语法高亮插件
 desc:      Fish shell like syntax highlighting for zsh
 
-# ── claude-code ──────────────────────────────────
-installed: unknown
-comment:   Anthropic 命令行 AI 助手
-desc:      (Claude Code) Terminal-based AI coding assistant
-
 # ── dingtalk ──────────────────────────────────
 installed: unknown
 comment:   钉钉办公客户端
@@ -254,3 +249,8 @@ desc:      GitHub command-line tool
 installed: 2026-05-25
 comment:   wireguard 工具
 desc:      Tools for the WireGuard secure network tunnel
+
+# ── claude-code ──────────────────────────────────
+installed: 2026-06-06
+comment:   (无备注)
+desc:      (Claude Code) Terminal-based AI coding assistant

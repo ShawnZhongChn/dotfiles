@@ -48,6 +48,7 @@ brew "tmux"
 brew "tmuxinator"
 # Python 包与项目管理器
 brew "uv"
+# wireguard 工具
 brew "wireguard-tools"
 # 基于 Rust 的终端文件管理器
 brew "yazi"
@@ -64,7 +65,6 @@ brew "sunnyyoung/tap/wechattweak"
 cask "apifox"
 # 用于在cli中大模型切换使用
 cask "cc-switch"
-# Anthropic 命令行 AI 助手
 cask "claude-code"
 # 临时使用数据库
 cask "datagrip"
