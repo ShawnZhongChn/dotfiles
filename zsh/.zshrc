@@ -1,6 +1,9 @@
 # ==========================================
 # 1. 性能加速 (P10K Instant Prompt)
 # ==========================================
+# direnv 必须在 instant prompt 之前初始化，避免控制台输出警告
+eval "$(direnv hook zsh)"
+
 # 必须放在文件顶部。如果初始化代码需要控制台输入，请将其移至此块上方。
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -13,6 +16,7 @@ export COLORTERM=truecolor
 # ==========================================
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 # export LANG=en_US.UTF-8
+export PATH="/opt/homebrew/opt/python@3.13/libexec/bin:/opt/homebrew/opt/python@3.13/bin:/opt/homebrew/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 # ==========================================
@@ -21,9 +25,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # Zoxide: 现代化的 cd 替换工具 (使用 z 代替 cd)
 eval "$(zoxide init zsh)"
-
-# Direnv: 自动加载项目级环境变量
-eval "$(direnv hook zsh)"
 
 # 别名映射 (Aliases)
 # 使用 eza 替代 ls (更漂亮的图标和颜色)
