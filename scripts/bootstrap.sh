@@ -7,6 +7,7 @@ DOTFILES_DIR="${HOME_DIR}/dotfiles"
 
 mkdir -p \
   "${HOME_DIR}/.config" \
+  "${HOME_DIR}/.config/bash" \
   "${HOME_DIR}/.cache/zsh" \
   "${HOME_DIR}/.config/git" \
   "${HOME_DIR}/.local/bin" \
@@ -36,7 +37,9 @@ link_file() {
 link_file "${DOTFILES_DIR}/home/.zprofile" "${HOME_DIR}/.zprofile"
 link_file "${DOTFILES_DIR}/home/.zshrc" "${HOME_DIR}/.zshrc"
 link_file "${DOTFILES_DIR}/home/.zshenv" "${HOME_DIR}/.zshenv"
+link_file "${DOTFILES_DIR}/home/.bashrc" "${HOME_DIR}/.bashrc"
 
+link_file "${DOTFILES_DIR}/config/bash/bashrc" "${HOME_DIR}/.config/bash/bashrc"
 mkdir -p "${HOME_DIR}/.config/zsh"
 link_file "${DOTFILES_DIR}/config/zsh/.zprofile" "${HOME_DIR}/.config/zsh/.zprofile"
 link_file "${DOTFILES_DIR}/config/zsh/.zshrc" "${HOME_DIR}/.config/zsh/.zshrc"

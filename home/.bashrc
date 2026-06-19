@@ -1,0 +1,3 @@
+if [ -r "$HOME/.config/bash/bashrc" ]; then
+  . "$HOME/.config/bash/bashrc"
+fi
