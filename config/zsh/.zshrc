@@ -34,7 +34,12 @@ fi
 
 command -v bat >/dev/null 2>&1 && alias cat='bat'
 command -v rg >/dev/null 2>&1 && alias grep='rg'
-command -v tmuxinator >/dev/null 2>&1 && alias mux='tmuxinator'
+
+autoload -Uz vcs_info
+zstyle ':vcs_info:git:*' formats ' %F{8}(%b)%f'
+precmd() { vcs_info }
+setopt PROMPT_SUBST
+PROMPT='%F{magenta}%n@%m%f %F{cyan}%~%f${vcs_info_msg_0_} %# '
 
 if [[ -t 0 ]]; then
   stty -ixon
@@ -43,6 +48,6 @@ bindkey -r '^S' 2>/dev/null || true
 
 # Remote SSH sessions attach to a durable tmux session by default. Local shells
 # stay outside tmux unless explicitly started.
-if [[ -n "$SSH_CONNECTION" && -z "$TMUX" && "$TERM_PROGRAM" != "vscode" ]] && command -v tmux >/dev/null 2>&1; then
+if [[ -o interactive && -n "$SSH_CONNECTION" && -z "$TMUX" && "$TERM_PROGRAM" != "vscode" ]] && command -v tmux >/dev/null 2>&1; then
   tmux attach -t main 2>/dev/null || tmux new -s main
 fi

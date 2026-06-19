@@ -1,0 +1,25 @@
+#!/usr/bin/env sh
+set -eu
+
+usage() {
+  printf 'usage: mux ai\n' >&2
+}
+
+if [ "${1:-}" != "ai" ]; then
+  usage
+  exit 2
+fi
+
+if [ -z "${TMUX:-}" ]; then
+  printf 'mux ai must be run inside tmux. Connect with ssh dev first.\n' >&2
+  exit 1
+fi
+
+project_name=$(basename "$PWD" | tr '. ' '__')
+window_name="AI-${project_name}"
+
+tmux new-window -n "$window_name" -c "$PWD" 'nvim .'
+tmux split-window -h -c "$PWD" 'claude'
+tmux split-window -h -c "$PWD" 'gemini'
+tmux select-layout even-horizontal
+tmux select-pane -t 1
