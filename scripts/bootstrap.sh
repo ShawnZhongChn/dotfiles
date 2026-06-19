@@ -9,6 +9,7 @@ mkdir -p \
   "${HOME_DIR}/.config" \
   "${HOME_DIR}/.config/bash" \
   "${HOME_DIR}/.config/nvim" \
+  "${HOME_DIR}/.config/systemd/user" \
   "${HOME_DIR}/.cache/zsh" \
   "${HOME_DIR}/.config/git" \
   "${HOME_DIR}/.local/bin" \
@@ -52,5 +53,6 @@ link_file "${DOTFILES_DIR}/config/git/config" "${HOME_DIR}/.gitconfig"
 link_file "${DOTFILES_DIR}/config/lazygit" "${HOME_DIR}/.config/lazygit"
 link_file "${DOTFILES_DIR}/config/ghostty" "${HOME_DIR}/.config/ghostty"
 link_file "${DOTFILES_DIR}/config/nvim" "${HOME_DIR}/.config/nvim"
+link_file "${DOTFILES_DIR}/config/systemd/user" "${HOME_DIR}/.config/systemd/user"
 
 echo "dotfiles bootstrap complete"

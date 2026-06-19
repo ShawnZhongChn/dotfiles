@@ -1,0 +1,9 @@
+[Unit]
+Description=Dev machine snapshot backup
+
+[Service]
+Type=oneshot
+ExecStart=%h/dotfiles/scripts/dev-backup.sh
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7
