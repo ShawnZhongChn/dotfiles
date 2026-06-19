@@ -7,8 +7,17 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 setopt SHARE_HISTORY
 
-autoload -Uz compinit
-compinit -d "${XDG_CACHE_HOME:-$HOME/.cache}/zsh/zcompdump"
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+plugins=(git z sudo history extract)
+
+if [ -r "$ZSH/oh-my-zsh.sh" ]; then
+  source "$ZSH/oh-my-zsh.sh"
+fi
+
+if [ -r "$HOME/.p10k.zsh" ]; then
+  source "$HOME/.p10k.zsh"
+fi
 
 if [ -f /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
   . /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -34,12 +43,6 @@ fi
 
 command -v bat >/dev/null 2>&1 && alias cat='bat'
 command -v rg >/dev/null 2>&1 && alias grep='rg'
-
-autoload -Uz vcs_info
-zstyle ':vcs_info:git:*' formats ' %F{8}(%b)%f'
-precmd() { vcs_info }
-setopt PROMPT_SUBST
-PROMPT='%F{magenta}%n@%m%f %F{cyan}%~%f${vcs_info_msg_0_} %# '
 
 if [[ -t 0 ]]; then
   stty -ixon

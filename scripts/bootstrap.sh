@@ -8,6 +8,7 @@ DOTFILES_DIR="${HOME_DIR}/dotfiles"
 mkdir -p \
   "${HOME_DIR}/.config" \
   "${HOME_DIR}/.config/bash" \
+  "${HOME_DIR}/.config/nvim" \
   "${HOME_DIR}/.cache/zsh" \
   "${HOME_DIR}/.config/git" \
   "${HOME_DIR}/.local/bin" \
@@ -37,6 +38,7 @@ link_file() {
 link_file "${DOTFILES_DIR}/home/.zprofile" "${HOME_DIR}/.zprofile"
 link_file "${DOTFILES_DIR}/home/.zshrc" "${HOME_DIR}/.zshrc"
 link_file "${DOTFILES_DIR}/home/.zshenv" "${HOME_DIR}/.zshenv"
+link_file "${DOTFILES_DIR}/home/.p10k.zsh" "${HOME_DIR}/.p10k.zsh"
 link_file "${DOTFILES_DIR}/home/.bashrc" "${HOME_DIR}/.bashrc"
 
 link_file "${DOTFILES_DIR}/config/bash/bashrc" "${HOME_DIR}/.config/bash/bashrc"
@@ -49,5 +51,6 @@ link_file "${DOTFILES_DIR}/config/tmux" "${HOME_DIR}/.config/tmux"
 link_file "${DOTFILES_DIR}/config/git/config" "${HOME_DIR}/.gitconfig"
 link_file "${DOTFILES_DIR}/config/lazygit" "${HOME_DIR}/.config/lazygit"
 link_file "${DOTFILES_DIR}/config/ghostty" "${HOME_DIR}/.config/ghostty"
+link_file "${DOTFILES_DIR}/config/nvim" "${HOME_DIR}/.config/nvim"
 
 echo "dotfiles bootstrap complete"
