@@ -1,0 +1,3 @@
+config-file = base.conf
+config-file = keybinds.conf
+config-file = keybinds-tmux.conf

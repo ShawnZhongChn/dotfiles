@@ -1,0 +1,13 @@
+gui:
+  theme:
+    selectedLineBgColor:
+      - reverse
+    selectedRangeBgColor:
+      - reverse
+os:
+  edit: "nvim --server $NVIM --remote {{filename}}"
+  editAtLine: "nvim --server $NVIM --remote {{filename}} && nvim --server $NVIM --remote-send ':{{line}}<CR>'"
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never --features=lazygit
